@@ -1,8 +1,3 @@
 # AUTHOR: Dmitry Lisin
 # REPO: https://github.com/dlisin/shadowrocket-config
 
-DOMAIN-SUFFIX,apple.com,DIRECT
-DOMAIN-SUFFIX,icloud.com,DIRECT
-DOMAIN-SUFFIX,itunes.com,DIRECT
-DOMAIN-SUFFIX,mzstatic.com,DIRECT
-DOMAIN-SUFFIX,icloud-content.com,DIRECT
