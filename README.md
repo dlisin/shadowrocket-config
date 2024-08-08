@@ -2,7 +2,7 @@
 
 ## How to use
 Open [Shadowrocket](https://www.shadowrocketdownload.com) and add configuration:
- - from url: `https://raw.githubusercontent.com/dlisin/shadowrocket-config/master/shadowrocket.conf`
+ - from url: `[https://raw.githubusercontent.com/dlisin/shadowrocket-config/master/shadowrocket.conf](https://raw.githubusercontent.com/keelfy/shadowrocket-config/master/shadowrocket.conf)`
  - or scan the QR code below
 
 ![QR code](https://raw.githubusercontent.com/dlisin/shadowrocket-config/master/images/config-qr.png)
