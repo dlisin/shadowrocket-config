@@ -101,3 +101,4 @@ DOMAIN-SUFFIX,discord.dev
 DOMAIN-SUFFIX,discord.new
 DOMAIN-SUFFIX,discord.gift
 DOMAIN-SUFFIX,discordstatus.com
+IP-CIDR,104.16.0.0/12
