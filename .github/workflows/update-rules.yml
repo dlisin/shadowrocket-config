@@ -1,0 +1,40 @@
+name: update-rules
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "59 23 * * 0"
+      
+jobs:
+  update-rules:
+    runs-on: ubuntu-latest
+    env:
+      SourceURL: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Shadowrocket/
+      TargetPath: ${GITHUB_WORKSPACE}/domains
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Update ./domains/discord.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${SourceURL}/Discord/Discord.list'
+          location: '${TargetPath}'
+          file-name: 'discord.list'
+      - name: Update ./domains/docker.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${SourceURL}/Docker/Docker.list'
+          location: '${TargetPath}'
+          file-name: 'docker.list'
+      - name: Update ./domains/facebook.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${SourceURL}/Facebook/Facebook.list'
+          location: '${TargetPath}'
+          file-name: 'facebook.list'
+
+      - name: Commit changed files
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: Update rules from https://github.com/blackmatrix7/ios_rule_script
