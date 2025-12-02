@@ -12,7 +12,7 @@ jobs:
       contents: write
     env:
       SOURCE_URL: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Shadowrocket/
-      TARGET_PATH: ${GITHUB_WORKSPACE}/domains
+      TARGET_PATH: ./domains
     steps:
       - name: Checkout
         uses: actions/checkout@v5
