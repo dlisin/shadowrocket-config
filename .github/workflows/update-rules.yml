@@ -9,8 +9,8 @@ jobs:
   update-rules:
     runs-on: ubuntu-latest
     env:
-      SourceURL: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Shadowrocket/
-      TargetPath: ${GITHUB_WORKSPACE}/domains
+      SOURCE_URL: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Shadowrocket/
+      TARGET_PATH: ${GITHUB_WORKSPACE}/domains
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -18,20 +18,20 @@ jobs:
       - name: Update ./domains/discord.list
         uses: carlosperate/download-file-action@v2
         with:
-          file-url: '${SourceURL}/Discord/Discord.list'
-          location: '${TargetPath}'
+          file-url: '${{ env.SOURCE_URL }}/Discord/Discord.list'
+          location: '${{ env.TARGET_PATH }}'
           file-name: 'discord.list'
       - name: Update ./domains/docker.list
         uses: carlosperate/download-file-action@v2
         with:
-          file-url: '${SourceURL}/Docker/Docker.list'
-          location: '${TargetPath}'
+          file-url: '${{ env.SOURCE_URL }}/Docker/Docker.list'
+          location: '${{ env.TARGET_PATH }}'
           file-name: 'docker.list'
       - name: Update ./domains/facebook.list
         uses: carlosperate/download-file-action@v2
         with:
-          file-url: '${SourceURL}/Facebook/Facebook.list'
-          location: '${TargetPath}'
+          file-url: '${{ env.SOURCE_URL }}/Facebook/Facebook.list'
+          location: '${{ env.TARGET_PATH }}'
           file-name: 'facebook.list'
 
       - name: Commit changed files
