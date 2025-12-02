@@ -1,10 +1,13 @@
 name: update-rules
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - 'master'
   schedule:
     - cron: "59 23 * * 0"
-      
+  workflow_dispatch:
+
 jobs:
   update-rules:
     runs-on: ubuntu-latest
@@ -17,6 +20,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
 
+      - name: Update ./domains/copilot.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${{ env.SOURCE_URL }}/Copilot/Copilot.list'
+          location: '${{ env.TARGET_PATH }}'
+          file-name: 'copilot.list'
       - name: Update ./domains/discord.list
         uses: carlosperate/download-file-action@v2
         with:
@@ -35,6 +44,72 @@ jobs:
           file-url: '${{ env.SOURCE_URL }}/Facebook/Facebook.list'
           location: '${{ env.TARGET_PATH }}'
           file-name: 'facebook.list'
+      - name: Update ./domains/github.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${{ env.SOURCE_URL }}/GitHub/GitHub.list'
+          location: '${{ env.TARGET_PATH }}'
+          file-name: 'github.list'
+      - name: Update ./domains/instagram.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${{ env.SOURCE_URL }}/Instagram/Instagram.list'
+          location: '${{ env.TARGET_PATH }}'
+          file-name: 'instagram.list'
+      - name: Update ./domains/jetbrains.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${{ env.SOURCE_URL }}/Jetbrains/Jetbrains.list'
+          location: '${{ env.TARGET_PATH }}'
+          file-name: 'jetbrains.list'
+      - name: Update ./domains/jetbrains.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${{ env.SOURCE_URL }}/Jetbrains/Jetbrains.list'
+          location: '${{ env.TARGET_PATH }}'
+          file-name: 'jetbrains.list'
+      - name: Update ./domains/linkedin.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${{ env.SOURCE_URL }}/LinkedIn/LinkedIn.list'
+          location: '${{ env.TARGET_PATH }}'
+          file-name: 'linkedin.list'
+      - name: Update ./domains/openai.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${{ env.SOURCE_URL }}/OpenAI/OpenAI.list'
+          location: '${{ env.TARGET_PATH }}'
+          file-name: 'openai.list'
+      - name: Update ./domains/reddit.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${{ env.SOURCE_URL }}/Reddit/Reddit.list'
+          location: '${{ env.TARGET_PATH }}'
+          file-name: 'reddit.list'
+      - name: Update ./domains/telegram.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${{ env.SOURCE_URL }}/Telegram/Telegram.list'
+          location: '${{ env.TARGET_PATH }}'
+          file-name: 'telegram.list'
+      - name: Update ./domains/twitter.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${{ env.SOURCE_URL }}/Twitter/Twitter.list'
+          location: '${{ env.TARGET_PATH }}'
+          file-name: 'twitter.list'
+      - name: Update ./domains/whatsapp.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${{ env.SOURCE_URL }}/Whatsapp/Whatsapp.list'
+          location: '${{ env.TARGET_PATH }}'
+          file-name: 'whatsapp.list'
+      - name: Update ./domains/youtube.list
+        uses: carlosperate/download-file-action@v2
+        with:
+          file-url: '${{ env.SOURCE_URL }}/YouTube/YouTube.list'
+          location: '${{ env.TARGET_PATH }}'
+          file-name: 'youtube.list'
 
       - name: Commit changed files
         uses: stefanzweifel/git-auto-commit-action@v7
