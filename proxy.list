@@ -1,7 +1,22 @@
 # AUTHOR: Dmitry Lisin
 # REPO: https://github.com/dlisin/shadowrocket-config
 
-# Torrents
+DOMAIN-SUFFIX,autodesk.com
+DOMAIN-KEYWORD,blankvpn
+DOMAIN-SUFFIX,blancsync.com
 DOMAIN-SUFFIX,nnmclub.to
 DOMAIN-KEYWORD,rutracker
 DOMAIN-KEYWORD,kinozal
+DOMAIN-KEYWORD,kinozaltv
+DOMAIN-KEYWORD,medium
+DOMAIN-SUFFIX,phncdn.com
+DOMAIN-SUFFIX,phncdn.com.sds.rncdn7.com
+DOMAIN-SUFFIX,pornhub.com
+DOMAIN-SUFFIX,pornhub.org
+DOMAIN-SUFFIX,pornolab.net
+DOMAIN-SUFFIX,pornhubpremium.com
+DOMAIN-SUFFIX,redis.com
+DOMAIN-SUFFIX,redis.io
+DOMAIN-SUFFIX,redislabs.com
+DOMAIN-SUFFIX,xvideos-cdn.com
+DOMAIN-SUFFIX,xvideos.com
