@@ -1,0 +1,7 @@
+# AUTHOR: Dmitry Lisin
+# REPO: https://github.com/dlisin/shadowrocket-config
+
+DOMAIN-SUFFIX,cdnst.net
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN-SUFFIX,speedtestcustom.com
+DOMAIN-SUFFIX,ooklaserver.net

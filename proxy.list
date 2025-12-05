@@ -9,14 +9,5 @@ DOMAIN-KEYWORD,rutracker
 DOMAIN-KEYWORD,kinozal
 DOMAIN-KEYWORD,kinozaltv
 DOMAIN-KEYWORD,medium
-DOMAIN-SUFFIX,phncdn.com
-DOMAIN-SUFFIX,phncdn.com.sds.rncdn7.com
-DOMAIN-SUFFIX,pornhub.com
-DOMAIN-SUFFIX,pornhub.org
-DOMAIN-SUFFIX,pornhubpremium.com
-DOMAIN-SUFFIX,redis.com
-DOMAIN-SUFFIX,redis.io
-DOMAIN-SUFFIX,redislabs.com
-DOMAIN-SUFFIX,speedtest.net
-DOMAIN-SUFFIX,xvideos-cdn.com
-DOMAIN-SUFFIX,xvideos.com
+DOMAIN-KEYWORD,redis
+DOMAIN-KEYWORD,xvideos
