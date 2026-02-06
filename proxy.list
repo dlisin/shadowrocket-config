@@ -1,13 +1,11 @@
-# AUTHOR: Dmitry Lisin
 # REPO: https://github.com/dlisin/shadowrocket-config
 
 DOMAIN-SUFFIX,autodesk.com
 DOMAIN-KEYWORD,blankvpn
 DOMAIN-SUFFIX,blancsync.com
-DOMAIN-SUFFIX,nnmclub.to
+DOMAIN-KEYWORD,nnmclub
 DOMAIN-KEYWORD,rutracker
 DOMAIN-KEYWORD,kinozal
-DOMAIN-KEYWORD,kinozaltv
 DOMAIN-KEYWORD,medium
 DOMAIN-KEYWORD,redis
 DOMAIN-KEYWORD,xvideos
