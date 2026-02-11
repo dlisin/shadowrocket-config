@@ -1,11 +1,26 @@
 # REPO: https://github.com/dlisin/shadowrocket-config
 
-DOMAIN-SUFFIX,autodesk.com
-DOMAIN-KEYWORD,blankvpn
-DOMAIN-SUFFIX,blancsync.com
+DOMAIN-KEYWORD,autodesk
 DOMAIN-KEYWORD,nnmclub
 DOMAIN-KEYWORD,rutracker
 DOMAIN-KEYWORD,kinozal
 DOMAIN-KEYWORD,medium
 DOMAIN-KEYWORD,redis
 DOMAIN-KEYWORD,xvideos
+
+# BlankVPN
+DOMAIN-KEYWORD,blankvpn
+DOMAIN-SUFFIX,blancsync.com
+
+# PornHub
+DOMAIN-KEYWORD,pornhub
+DOMAIN-KEYWORD,phncdn
+
+# Speedtest
+DOMAIN-KEYWORD,speedtest
+DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-SUFFIX,cdnst.net
+
+# Gridfinity Stuff
+DOMAIN-SUFFIX,tooltrace.ai
+DOMAIN-SUFFIX,perplexinglabs.com
