@@ -7,14 +7,13 @@ DOMAIN-KEYWORD,kinozal
 DOMAIN-KEYWORD,medium
 DOMAIN-KEYWORD,redis
 DOMAIN-KEYWORD,xvideos
+DOMAIN-KEYWORD,pornhub
+DOMAIN-KEYWORD,phncdn
+DOMAIN-SUFFIX,confluent.io
 
 # BlankVPN
 DOMAIN-KEYWORD,blankvpn
 DOMAIN-SUFFIX,blancsync.com
-
-# PornHub
-DOMAIN-KEYWORD,pornhub
-DOMAIN-KEYWORD,phncdn
 
 # Speedtest
 DOMAIN-KEYWORD,speedtest
