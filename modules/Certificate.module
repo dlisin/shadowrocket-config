@@ -1,0 +1,5 @@
+#!name=Certificate Module
+[MITM]
+enable=true
+ca-passphrase=
+ca-p12=...

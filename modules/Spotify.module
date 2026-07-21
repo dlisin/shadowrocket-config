@@ -1,0 +1,19 @@
+#!name=Spotify Premium Module
+
+[Rule]
+AND,((DOMAIN-SUFFIX,spotify.com), (PROTOCOL,UDP)),REJECT
+URL-REGEX,^https?:\/\/(.*-ad-logic.*|.*ads-ak-ent.*|ads-ak-spotify-com\.akamaized\.net|crashdump\.spotify\.com|log\.spotify\.com|spclient\.wg\.spotify\.com\/(ad-logic|ads))\/,REJECT
+DOMAIN-KEYWORD,spotify,PROXY
+DOMAIN-SUFFIX,scdn.co,PROXY
+DOMAIN-SUFFIX,pscdn.co,PROXY
+DOMAIN-SUFFIX,spoti.fi,PROXY
+
+[Header Rewrite]
+^https?:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)(:443)?\/user-customization-service\/v1\/customize header-del if-none-match
+
+[Script]
+spotify-json = type=http-request,pattern=^https?:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)(:443)?\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/dlisin/shadowrocket-config/master/modules/scripts/spotify-json.js,timeout=10
+spotify-proto = type=http-response,pattern=^https?:\/\/(spclient\.wg\.spotify\.com|.*-spclient\.spotify\.com)(:443)?\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/dlisin/shadowrocket-config/master/modules/scripts/spotify-proto.js,timeout=10
+
+[MITM]
+hostname = %APPEND% spclient.wg.spotify.com, *-spclient.spotify.com, *.spotify.com

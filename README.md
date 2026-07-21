@@ -7,11 +7,12 @@ Open [Shadowrocket](https://www.shadowrocketdownload.com) and add configuration 
 ## Predefined Rules 
  - https://github.com/itdoginfo/allow-domains
  - https://github.com/blackmatrix7/ios_rule_script
+ - https://github.com/misha-tgshv/shadowrocket-configuration-file
 
 ## Usefull Links:
  - [Description of the configuration file format](https://manual.nssurge.com)
    (originally written for [Surge](https://nssurge.com), but also suitable for [Shadowrocket](https://www.shadowrocketdownload.com))
  - [Shadowrocket User Manual (Chinese)](https://github.com/LOWERTOP/Shadowrocket/blob/main/README.md) 
    (use [Google Translate](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://lowertop.github.io/Shadowrocket) for English version)
-
-
+ - [Shadowrocket Manual (Russian)](https://mishatugushev.ru/blog/?go=all/shadowrocket-seamless/)
+ - [Shadowrocket config generator (Russian)](https://rocket-conf.ru/)
